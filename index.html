@@ -100,14 +100,17 @@
   	</div> <!-- // card -->
 
   	<div class="card">
-  		<canvas id="myChart" width="400" height="400"></canvas>
+    <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+  		        <canvas  class="embed-responsive-item"  id="myChart" ></canvas>
+        </div> <!-- //embed-responsive  -->
 
   	</div> <!-- // card -->
 		
   </div>
   <div class="col-md-7"> 
 		<div class="card">
-	  		<canvas id="graph" width="400" height="400"> </canvas>
+	  		<canvas id="graph" width="700" height="400"> </canvas>
 	  	</div> <!-- // card -->
 
 	  	<div class="card">
@@ -126,7 +129,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/libs/bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
     <script src="assets/libs/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/libs/bower_components/Chart.js/dist/Chart.min.js"></script>
+    <!--     <script src="assets/libs/bower_components/Chart.js/dist/Chart.min.js"></script> -->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.min.js" ></script>
 
     <script src="assets/app.js"></script>
 

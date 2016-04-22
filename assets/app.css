@@ -9,10 +9,10 @@ body > .container{padding-top: 80px;}
 
 
 .z-1 { box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37)  }
-.z-2 { box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2)  }
-.z-3 { box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19)  }
-.z-4 { box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3), 0 14px 12px 0 rgba(0, 0, 0, 0.17)  }
-.z-5 { box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15)   }
+.z-2 { box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2) ; }
+.z-3 { box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19) ; }
+.z-4 { box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3), 0 14px 12px 0 rgba(0, 0, 0, 0.17);  }
+.z-5 { box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);   }
 
  
 .navbar-static-top { margin-bottom: 19px;}
@@ -22,7 +22,7 @@ body > .container{padding-top: 80px;}
 
 
 
-.app{background-color: #1b2531}
+.app{background-color: #1b2531;}
 
 
 
