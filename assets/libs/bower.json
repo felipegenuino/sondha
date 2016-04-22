@@ -1,0 +1,17 @@
+{
+  "name": "SondhaBower",
+  "homepage": "https://github.com/felipegenuino/sondha",
+  "authors": [
+    "Felipe Genuino <design@felipegenuino.com>"
+  ],
+  "description": "Dependencias para o projeto Sondha",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3",
+    "Chart.js": "^2.0.2",
+    "themify-icons": "^0.1.0"
+  }
+}
