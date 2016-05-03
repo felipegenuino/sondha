@@ -49,7 +49,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"> <a href="#">	  <span class="icon icon-dashboard"></span> Dashboard</a></li>
-            <li>				<a href="#about"> <span class="icon icon-cabos-eleitorais"></span> Cabos Eleitorais</a></li>
+            <li> <a href="#about"> <span class="icon icon-cabos-eleitorais"></span> Cabos Eleitorais</a></li>
              <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -100,17 +100,64 @@
   	</div> <!-- // card -->
 
   	<div class="card">
-    <!-- 16:9 aspect ratio -->
-        <div class="embed-responsive embed-responsive-16by9">
-  		        <canvas  class="embed-responsive-item"  id="myChart" ></canvas>
-        </div> <!-- //embed-responsive  -->
-
-  	</div> <!-- // card -->
+           <canvas id="myChart2" width="700" height="400"> 
+    </div> <!-- // card -->
 		
   </div>
   <div class="col-md-7"> 
 		<div class="card">
-	  		<canvas id="graph" width="700" height="400"> </canvas>
+
+
+
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home"> <canvas id="myChart" width="700" height="400"> </canvas></div>
+    <div role="tabpanel" class="tab-pane" id="profile"><canvas id="graph" width="700" height="400"> </canvas></div>
+    <div role="tabpanel" class="tab-pane" id="messages"><canvas id="graph" width="700" height="400"> </canvas></div>
+    <div role="tabpanel" class="tab-pane" id="settings"><canvas id="graph" width="700" height="400"> </canvas></div>
+  </div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+             <div class="card-candidate">
+                <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                <span class="card-candidate__name">{{Name}}</span>
+                <span class="card-candidate__party">{{partido}}</span>
+                <div class="card-candidate__loading"></div>
+             </div> <!-- //card-candidate -->
+      </a>
+    </li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+          <div class="card-candidate">
+                <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                <span class="card-candidate__name">{{Name}}</span>
+                <span class="card-candidate__party">{{partido}}</span>
+                <div class="card-candidate__loading"></div>
+          </div> <!-- //card-candidate -->
+    </a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+          <div class="card-candidate">
+                <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                <span class="card-candidate__name">{{Name}}</span>
+                <span class="card-candidate__party">{{partido}}</span>
+                <div class="card-candidate__loading"></div>
+          </div> <!-- //card-candidate -->
+    </a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"> 
+          <div class="card-candidate">
+                <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                <span class="card-candidate__name">{{Name}}</span>
+                <span class="card-candidate__party">{{partido}}</span>
+                <div class="card-candidate__loading"></div>
+          </div> <!-- //card-candidate -->
+    </a></li>
+  </ul>
+
+
+	  		
 	  	</div> <!-- // card -->
 
 	  	<div class="card">
@@ -125,14 +172,14 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/libs/bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+   <script src="assets/libs/bower_components/Chart.js/dist/Chart.bundle.js" ></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/libs/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!--     <script src="assets/libs/bower_components/Chart.js/dist/Chart.min.js"></script> -->    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.min.js" ></script>
+    <script src="assets/libs/bower_components/Chart.js/dist/Chart.min.js" ></script>
 
     <script src="assets/app.js"></script>
+
 
     
   </body>

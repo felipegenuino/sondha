@@ -1,30 +1,54 @@
+ 
 Chart.defaults.global.responsive = true;
+Chart.defaults.global.legend.labels.fontColor = "#fff";
+Chart.defaults.global.defaultFontColor = '#fff';
+
 
 
 var data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
     datasets: [
         {
-            label: "Google Income",
-            fillColor: "rgba(229,89,52,0.2)",
-            strokeColor: "#9BC53D",
-            pointColor: "#E55934",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [65, 59, 40, 71, 56, 65, 80]
+            label: "My First dataset",
+            backgroundColor: "rgba(179,181,198,0.2)",
+            borderColor: "rgba(179,181,198,1)",
+            pointBackgroundColor: "rgba(179,181,198,1)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(179,181,198,1)",
+            data: [65, 59, 90, 81, 56, 55, 40]
         },
         {
-            label: "Ads Income",
-            fillColor: "rgba(151,187,205,0.2)",
-            strokeColor: "#E55934",
-            pointColor: "#02C39A",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(151,187,205,1)",
-            data: [12, 16, 20, 15, 34, 43, 70]
+            label: "My Second dataset",
+            backgroundColor: "rgba(255,99,132,0.2)",
+            borderColor: "rgba(255,99,132,1)",
+            pointBackgroundColor: "rgba(255,99,132,1)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(255,99,132,1)",
+            data: [28, 48, 40, 19, 96, 27, 100]
         }
     ]
 };
-var context = document.getElementById("graph").getContext("2d");
-new Chart(context).Line(data);
+
+
+
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+
+    type: 'line',
+     data: data,
+    options: {
+         scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+
+
+ 
