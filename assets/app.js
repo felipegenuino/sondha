@@ -1,7 +1,7 @@
  
 Chart.defaults.global.responsive = true;
-Chart.defaults.global.legend.labels.fontColor = "#fff";
-Chart.defaults.global.defaultFontColor = '#fff';
+Chart.defaults.global.legend.labels.fontColor = "#A2BACD";
+Chart.defaults.global.defaultFontColor = '#A2BACD';
 
 
 

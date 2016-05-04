@@ -1,10 +1,13 @@
  
-
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700italic,700,800,800italic);
 
 
 /*  sticky-footer-navbar */
-body {    min-height: 800px;}
+body {    
+font-family: 'Open Sans', sans-serif;
+font-weight: 400
+}
+
 body > .container{padding-top: 80px;}
 canvas{  -moz-user-select: none;  -webkit-user-select: none;   -ms-user-select: none;  }
   
@@ -55,30 +58,47 @@ canvas{  -moz-user-select: none;  -webkit-user-select: none;   -ms-user-select: 
 
 
 
+.canvas-sample{background: #495465; width: 100%;}
 
 
 
-
+/* TABS DASHBOARD */
+.navtabs{}
+.navtabs__list {     width: 100%; list-style: none; margin: 10px 0 0 0; padding: 0; display: inline-block;}
+.navtabs__list-item {  position: relative; display: inline-block;}
+.navtabs__list-item.active {  background-color: #1A2B39;}
 
 
 /* CARDS */
-.card--slim{    padding: 0 !important;} 
-.card {
-    /*border-radius: 4px;*/
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-    background-color: #2e3c4c;
-    color: #a3b2c5;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-}
+.card__slim{ padding: 0 !important;} 
+.card {  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37); background-color: #2e3c4c; color: #a3b2c5; margin-bottom: 20px; position: relative; z-index: 1; padding: 20px;}
  
 
 
- .card-candidate{}
- .card-candidate__image{}
- .card-candidate__name{}
- .card-candidate__party{}
 
+/* CARDS CANDIDATE */
+.card-candidate__container{ padding: 10px 0;}
+.card-candidate{ width: 120px; position: relative;}
+.card-candidate__image { display: block; margin: 0 auto;}
+.card-candidate__name, .card-candidate__party { display: inline-block; width: 100%; text-align: center;}
+.card-candidate__name {color: #A2BACD;   font-weight: 700;  font-size: 12px;}
+.card-candidate__party{color: #A2BACD;    font-size: 12px;}
 
+.card-candidate__loading-container {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.22);
+    width: 5px;
+    height: 100%;
+    right: 10px;
+    bottom: 0;
+}
+.card-candidate__loading {
+    background-color: red;
+    width: 5px;
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+    transition: all 0.5s;
+    
+}
+ 

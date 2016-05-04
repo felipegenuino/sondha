@@ -92,7 +92,7 @@
 <div class="container container-fluid">
 <div class="row">
   <div class="col-md-5"> 
-  	<div class="card card--slim">
+  	<div class="card card__slim">
 				<!-- 16:9 aspect ratio -->
 				<div class="embed-responsive embed-responsive-16by9">
 				 	 <iframe  class="embed-responsive-item"  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d226319.11224070427!2d-48.556975!3d-27.586208!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1461281409322" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -100,60 +100,93 @@
   	</div> <!-- // card -->
 
   	<div class="card">
-           <canvas id="myChart2" width="700" height="400"> 
+        <div class="embed-responsive embed-responsive-16by9">
+           <canvas class="embed-responsive-item canvas-sample" width="700" height="400"> 
+        </div> <!-- //embed-responsive  -->
     </div> <!-- // card -->
 		
   </div>
   <div class="col-md-7"> 
-		<div class="card">
+		<div class="card card__slim">
 
 
 
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home"> <canvas id="myChart" width="700" height="400"> </canvas></div>
-    <div role="tabpanel" class="tab-pane" id="profile"><canvas id="graph" width="700" height="400"> </canvas></div>
-    <div role="tabpanel" class="tab-pane" id="messages"><canvas id="graph" width="700" height="400"> </canvas></div>
-    <div role="tabpanel" class="tab-pane" id="settings"><canvas id="graph" width="700" height="400"> </canvas></div>
+    <div role="tabpanel" class="tab-pane active"  id="item1">  <canvas id="myChart" width="700" height="400"> </canvas></div>
+    <div role="tabpanel" class="tab-pane"         id="item2">  <canvas class="embed-responsive-item canvas-sample" width="700" height="400"></canvas> </div>
+    <div role="tabpanel" class="tab-pane"         id="item3">  <canvas class="embed-responsive-item canvas-sample" width="700" height="400"></canvas></div>
+    <div role="tabpanel" class="tab-pane"         id="item4">  <canvas class="embed-responsive-item canvas-sample" width="700" height="400"></canvas>  </div>
+    <div role="tabpanel" class="tab-pane"         id="item5">  <canvas class="embed-responsive-item canvas-sample" width="700" height="400"></canvas>  </div>
   </div>
 
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active">
-        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
-             <div class="card-candidate">
-                <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
-                <span class="card-candidate__name">{{Name}}</span>
-                <span class="card-candidate__party">{{partido}}</span>
-                <div class="card-candidate__loading"></div>
-             </div> <!-- //card-candidate -->
+  <ul class="navtabs__list" role="tablist">
+    <li role="presentation" class="navtabs__list-item active">
+        <a href="#item1" aria-controls="home" role="tab" data-toggle="tab">
+             <div class="card-candidate__container">
+               <div class="card-candidate">
+                    <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                    <span class="card-candidate__name">Johnny Cash</span>
+                    <span class="card-candidate__party">PJC</span>
+                    <div class="card-candidate__loading-container">
+                      <div class="card-candidate__loading" style="height: 25%;"></div>
+                    </div> <!-- //card-candidate__loading-container -->
+               </div> <!-- //card-candidate -->
+             </div> <!-- //card-candidate__container -->
       </a>
     </li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
-          <div class="card-candidate">
+    <li class="navtabs__list-item" role="presentation"><a href="#item2" aria-controls="profile" role="tab" data-toggle="tab">
+            <div class="card-candidate__container">
+               <div class="card-candidate">
+                    <img src="assets/images/candidate/candidate-02.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                    <span class="card-candidate__name">{{Name}}</span>
+                    <span class="card-candidate__party">{{partido}}</span>
+                    <div class="card-candidate__loading-container">
+                      <div class="card-candidate__loading" style="height: 45%;"></div>
+                    </div> <!-- //card-candidate__loading-container -->
+               </div> <!-- //card-candidate -->
+             </div> <!-- //card-candidate__container -->
+    </a></li>
+    <li class="navtabs__list-item" role="presentation"><a href="#item3" aria-controls="messages" role="tab" data-toggle="tab">
+           <div class="card-candidate__container">
+               <div class="card-candidate">
+                    <img src="assets/images/candidate/candidate-03.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                    <span class="card-candidate__name">{{Name}}</span>
+                    <span class="card-candidate__party">{{partido}}</span>
+                    <div class="card-candidate__loading-container">
+                      <div class="card-candidate__loading" style="height: 05%;"></div>
+                    </div> <!-- //card-candidate__loading-container -->
+               </div> <!-- //card-candidate -->
+             </div> <!-- //card-candidate__container -->
+    </a></li>
+    <li class="navtabs__list-item" role="presentation"><a href="#item4" aria-controls="settings" role="tab" data-toggle="tab"> 
+           <div class="card-candidate__container">
+               <div class="card-candidate">
+                    <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                    <span class="card-candidate__name">{{Name}}</span>
+                    <span class="card-candidate__party">{{partido}}</span>
+                    <div class="card-candidate__loading-container">
+                      <div class="card-candidate__loading" style="height: 80%;"></div>
+                    </div> <!-- //card-candidate__loading-container -->
+               </div> <!-- //card-candidate -->
+             </div> <!-- //card-candidate__container -->
+    </a></li>
+    <li class="navtabs__list-item" role="presentation">
+      <a href="#item5" aria-controls="settings" role="tab" data-toggle="tab"> 
+       <div class="card-candidate__container">
+           <div class="card-candidate">
                 <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
                 <span class="card-candidate__name">{{Name}}</span>
                 <span class="card-candidate__party">{{partido}}</span>
-                <div class="card-candidate__loading"></div>
-          </div> <!-- //card-candidate -->
-    </a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
-          <div class="card-candidate">
-                <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
-                <span class="card-candidate__name">{{Name}}</span>
-                <span class="card-candidate__party">{{partido}}</span>
-                <div class="card-candidate__loading"></div>
-          </div> <!-- //card-candidate -->
-    </a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"> 
-          <div class="card-candidate">
-                <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
-                <span class="card-candidate__name">{{Name}}</span>
-                <span class="card-candidate__party">{{partido}}</span>
-                <div class="card-candidate__loading"></div>
-          </div> <!-- //card-candidate -->
-    </a></li>
+                <div class="card-candidate__loading-container">
+                      <div class="card-candidate__loading" style="height: 15%;"></div>
+                </div> <!-- //card-candidate__loading-container -->
+           </div> <!-- //card-candidate -->
+         </div> <!-- //card-candidate__container -->
+      </a>
+    </li>
   </ul>
 
 
