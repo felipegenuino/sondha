@@ -15,8 +15,9 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/libs/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/libs/bower_components/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css" />
 
- 
     <!-- Custom styles for this template -->
     <link href="assets/app.css" rel="stylesheet">
  
@@ -92,106 +93,175 @@
 <div class="container container-fluid">
 <div class="row">
   <div class="col-md-5"> 
-  	<div class="card card__slim">
+  	<section class="card card__slim">
 				<!-- 16:9 aspect ratio -->
 				<div class="embed-responsive embed-responsive-16by9">
 				 	 <iframe  class="embed-responsive-item"  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d226319.11224070427!2d-48.556975!3d-27.586208!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1461281409322" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div> <!-- //embed-responsive  -->
-  	</div> <!-- // card -->
+  	</section> <!-- // card -->
 
-  	<div class="card">
+  	<section class="card">
         <div class="embed-responsive embed-responsive-16by9">
            <canvas class="embed-responsive-item canvas-sample" width="700" height="400"> 
         </div> <!-- //embed-responsive  -->
-    </div> <!-- // card -->
+    </section> <!-- // card -->
 		
   </div>
   <div class="col-md-7"> 
-		<div class="card card__slim">
+		<section class="card card__slim">
+
+          <div id="sync1" class="owl-carousel owl-theme">
+              <div class="item">  <canvas id="myChart" width="700" height="400"> </canvas> </div>
+              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-2" width="700" height="400"></canvas>  </div>
+              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-3" width="700" height="400"></canvas>  </div>
+              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-4" width="700" height="400"></canvas>  </div>
+              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-5" width="700" height="400"></canvas>  </div>
+              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-6" width="700" height="400"></canvas>  </div>
+              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-1" width="700" height="400"></canvas>  </div>
+              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-2" width="700" height="400"></canvas>  </div>
+              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-3" width="700" height="400"></canvas>  </div>
+              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-4" width="700" height="400"></canvas>  </div>
+          </div> <!-- // #sync1 -->
+
+          <div id="sync2" class="owl-carousel owl-theme">
+            <div class="item">  
+                    <div class="card-candidate__container">
+                       <div class="card-candidate">
+                            <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                            <span class="card-candidate__name">Johnny Cash</span>
+                            <span class="card-candidate__party">PJC</span>
+                            <div class="card-candidate__loading-container">
+                              <div class="card-candidate__loading party-color-1" style="height: 25%;"></div>
+                            </div> <!-- //card-candidate__loading-container -->
+                       </div> <!-- //card-candidate -->
+                     </div> <!-- //card-candidate__container -->
+            </div> <!-- // item -->
+
+            <div class="item">
+                  <div class="card-candidate__container">
+                         <div class="card-candidate">
+                              <img src="assets/images/candidate/candidate-02.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                              <span class="card-candidate__name">{{Name}}</span>
+                              <span class="card-candidate__party">{{partido}}</span>
+                              <div class="card-candidate__loading-container">
+                                  <div class="card-candidate__loading party-color-2" style="height: 45%;"></div>
+                              </div> <!-- //card-candidate__loading-container -->
+                         </div> <!-- //card-candidate -->
+                  </div> <!-- //card-candidate__container -->
+            </div> <!-- // item -->
+             
+            <div class="item">
+                  <div class="card-candidate__container">
+                         <div class="card-candidate">
+                              <img src="assets/images/candidate/candidate-03.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                              <span class="card-candidate__name">{{Name}}</span>
+                              <span class="card-candidate__party">{{partido}}</span>
+                              <div class="card-candidate__loading-container">
+                                  <div class="card-candidate__loading party-color-3" style="height: 60%;"></div>
+                              </div> <!-- //card-candidate__loading-container -->
+                         </div> <!-- //card-candidate -->
+                  </div> <!-- //card-candidate__container -->
+            </div> <!-- // item -->
+
+            <div class="item">
+                  <div class="card-candidate__container">
+                         <div class="card-candidate">
+                              <img src="assets/images/candidate/candidate-04.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                              <span class="card-candidate__name">{{Name}}</span>
+                              <span class="card-candidate__party">{{partido}}</span>
+                              <div class="card-candidate__loading-container">
+                                  <div class="card-candidate__loading party-color-4" style="height: 35%;"></div>
+                              </div> <!-- //card-candidate__loading-container -->
+                         </div> <!-- //card-candidate -->
+                  </div> <!-- //card-candidate__container -->
+            </div> <!-- // item -->
+
+            <div class="item">
+                  <div class="card-candidate__container">
+                         <div class="card-candidate">
+                              <img src="assets/images/candidate/candidate-05.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                              <span class="card-candidate__name">{{Name}}</span>
+                              <span class="card-candidate__party">{{partido}}</span>
+                              <div class="card-candidate__loading-container">
+                                  <div class="card-candidate__loading party-color-5" style="height: 85%;"></div>
+                              </div> <!-- //card-candidate__loading-container -->
+                         </div> <!-- //card-candidate -->
+                  </div> <!-- //card-candidate__container -->
+            </div> <!-- // item -->
+
+            <div class="item">
+                  <div class="card-candidate__container">
+                         <div class="card-candidate">
+                              <img src="assets/images/candidate/candidate-06.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                              <span class="card-candidate__name">{{Name}}</span>
+                              <span class="card-candidate__party">{{partido}}</span>
+                              <div class="card-candidate__loading-container">
+                                  <div class="card-candidate__loading party-color-6" style="height: 25%;"></div>
+                              </div> <!-- //card-candidate__loading-container -->
+                         </div> <!-- //card-candidate -->
+                  </div> <!-- //card-candidate__container -->
+            </div> <!-- // item -->      
+
+            <div class="item">  
+                    <div class="card-candidate__container">
+                       <div class="card-candidate">
+                            <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                            <span class="card-candidate__name">Johnny Cash</span>
+                            <span class="card-candidate__party">PJC</span>
+                            <div class="card-candidate__loading-container">
+                              <div class="card-candidate__loading party-color-1" style="height: 55%;"></div>
+                            </div> <!-- //card-candidate__loading-container -->
+                       </div> <!-- //card-candidate -->
+                     </div> <!-- //card-candidate__container -->
+            </div> <!-- // item -->
+
+            <div class="item">
+                  <div class="card-candidate__container">
+                         <div class="card-candidate">
+                              <img src="assets/images/candidate/candidate-02.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                              <span class="card-candidate__name">{{Name}}</span>
+                              <span class="card-candidate__party">{{partido}}</span>
+                              <div class="card-candidate__loading-container">
+                                  <div class="card-candidate__loading party-color-2" style="height: 15%;"></div>
+                              </div> <!-- //card-candidate__loading-container -->
+                         </div> <!-- //card-candidate -->
+                  </div> <!-- //card-candidate__container -->
+            </div> <!-- // item -->
+             
+            <div class="item">
+                  <div class="card-candidate__container">
+                         <div class="card-candidate">
+                              <img src="assets/images/candidate/candidate-03.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                              <span class="card-candidate__name">{{Name}}</span>
+                              <span class="card-candidate__party">{{partido}}</span>
+                              <div class="card-candidate__loading-container">
+                                  <div class="card-candidate__loading party-color-3" style="height: 65%;"></div>
+                              </div> <!-- //card-candidate__loading-container -->
+                         </div> <!-- //card-candidate -->
+                  </div> <!-- //card-candidate__container -->
+            </div> <!-- // item -->
+
+            <div class="item">
+                  <div class="card-candidate__container">
+                         <div class="card-candidate">
+                              <img src="assets/images/candidate/candidate-04.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
+                              <span class="card-candidate__name">{{Name}}</span>
+                              <span class="card-candidate__party">{{partido}}</span>
+                              <div class="card-candidate__loading-container">
+                                  <div class="card-candidate__loading party-color-4" style="height: 45%;"></div>
+                              </div> <!-- //card-candidate__loading-container -->
+                         </div> <!-- //card-candidate -->
+                  </div> <!-- //card-candidate__container -->
+            </div> <!-- // item -->
+
+          </div> <!-- //sync2 -->
+           
 
 
-
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active"  id="item1">  <canvas id="myChart" width="700" height="400"> </canvas></div>
-    <div role="tabpanel" class="tab-pane fade"         id="item2">  <canvas class="embed-responsive-item canvas-sample" width="700" height="400"></canvas> </div>
-    <div role="tabpanel" class="tab-pane fade"         id="item3">  <canvas class="embed-responsive-item canvas-sample" width="700" height="400"></canvas></div>
-    <div role="tabpanel" class="tab-pane fade"         id="item4">  <canvas class="embed-responsive-item canvas-sample" width="700" height="400"></canvas>  </div>
-    <div role="tabpanel" class="tab-pane fade"         id="item5">  <canvas class="embed-responsive-item canvas-sample" width="700" height="400"></canvas>  </div>
-  </div>
-
-  <!-- Nav tabs -->
-  <ul class="navtabs__list" role="tablist">
-    <li role="presentation" class="navtabs__list-item active">
-        <a href="#item1" aria-controls="home" role="tab" data-toggle="tab">
-             <div class="card-candidate__container">
-               <div class="card-candidate">
-                    <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
-                    <span class="card-candidate__name">Johnny Cash</span>
-                    <span class="card-candidate__party">PJC</span>
-                    <div class="card-candidate__loading-container">
-                      <div class="card-candidate__loading party-color-1" style="height: 25%;"></div>
-                    </div> <!-- //card-candidate__loading-container -->
-               </div> <!-- //card-candidate -->
-             </div> <!-- //card-candidate__container -->
-      </a>
-    </li>
-    <li class="navtabs__list-item" role="presentation"><a href="#item2" aria-controls="profile" role="tab" data-toggle="tab">
-            <div class="card-candidate__container">
-               <div class="card-candidate">
-                    <img src="assets/images/candidate/candidate-02.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
-                    <span class="card-candidate__name">{{Name}}</span>
-                    <span class="card-candidate__party">{{partido}}</span>
-                    <div class="card-candidate__loading-container">
-                      <div class="card-candidate__loading party-color-2" style="height: 45%;"></div>
-                    </div> <!-- //card-candidate__loading-container -->
-               </div> <!-- //card-candidate -->
-             </div> <!-- //card-candidate__container -->
-    </a></li>
-    <li class="navtabs__list-item" role="presentation"><a href="#item3" aria-controls="messages" role="tab" data-toggle="tab">
-           <div class="card-candidate__container">
-               <div class="card-candidate">
-                    <img src="assets/images/candidate/candidate-03.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
-                    <span class="card-candidate__name">{{Name}}</span>
-                    <span class="card-candidate__party">{{partido}}</span>
-                    <div class="card-candidate__loading-container">
-                      <div class="card-candidate__loading party-color-3" style="height: 35%;"></div>
-                    </div> <!-- //card-candidate__loading-container -->
-               </div> <!-- //card-candidate -->
-             </div> <!-- //card-candidate__container -->
-    </a></li>
-    <li class="navtabs__list-item" role="presentation"><a href="#item4" aria-controls="settings" role="tab" data-toggle="tab"> 
-           <div class="card-candidate__container">
-               <div class="card-candidate">
-                    <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
-                    <span class="card-candidate__name">{{Name}}</span>
-                    <span class="card-candidate__party">{{partido}}</span>
-                    <div class="card-candidate__loading-container">
-                      <div class="card-candidate__loading party-color-5" style="height: 80%;"></div>
-                    </div> <!-- //card-candidate__loading-container -->
-               </div> <!-- //card-candidate -->
-             </div> <!-- //card-candidate__container -->
-    </a></li>
-    <li class="navtabs__list-item" role="presentation">
-      <a href="#item5" aria-controls="settings" role="tab" data-toggle="tab"> 
-       <div class="card-candidate__container">
-           <div class="card-candidate">
-                <img src="assets/images/candidate/candidate-01.jpg" width="80px"  height="90px" alt="" class="card-candidate__image">
-                <span class="card-candidate__name">{{Name}}</span>
-                <span class="card-candidate__party">{{partido}}</span>
-                <div class="card-candidate__loading-container">
-                      <div class="card-candidate__loading party-color-6" style="height: 15%;"></div>
-                </div> <!-- //card-candidate__loading-container -->
-           </div> <!-- //card-candidate -->
-         </div> <!-- //card-candidate__container -->
-      </a>
-    </li>
-  </ul>
 
 
 	  		
-	  	</div> <!-- // card -->
+	  	</section> <!-- // card -->
 
 	  	<div class="card">
 	  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde modi, ex maiores voluptas nulla, eaque eius odit corporis suscipit, ea exercitationem, accusantium assumenda velit. Sunt sequi animi atque est tempore non ducimus excepturi quaerat labore minima, blanditiis tempora illum nemo hic, quidem aliquid consequuntur, porro aliquam cupiditate fugiat possimus! Sit ipsam eos error natus odio architecto ea, quidem, enim, nemo cupiditate repellendus! Ab accusamus dolor eveniet inventore laboriosam, minus perspiciatis beatae, laborum temporibus unde ex. Debitis inventore, quis quae neque itaque quo aspernatur repellat omnis, culpa distinctio. Facilis atque alias labore possimus esse, optio delectus tempore, qui. Veritatis perspiciatis, excepturi nostrum, est distinctio, dicta a dolorum harum nemo deserunt cumque consectetur. Fugit voluptatum quas necessitatibus quidem quo maxime? Fugiat sunt vel, saepe nulla totam pariatur voluptate</p>
@@ -205,13 +275,69 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-   <script src="assets/libs/bower_components/Chart.js/dist/Chart.bundle.js" ></script>
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/libs/bower_components/Chart.js/dist/Chart.bundle.js" ></script>
+    <script src="assets/libs/bower_components/jquery/dist/jquery.js"></script>
     <script src="assets/libs/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/libs/bower_components/Chart.js/dist/Chart.min.js" ></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
+    <script src="assets/libs/bower_components/Chart.js/dist/Chart.min.js" ></script>
     <script src="assets/app.js"></script>
+
+    <script>
+      //conteudo provisório, retirar quando implementar
+          $(document).ready(function() {
+                Chart.defaults.global.responsive = true;
+                Chart.defaults.global.legend.labels.fontColor = "#A2BACD";
+                Chart.defaults.global.defaultFontColor = '#A2BACD';
+
+                var data = {
+                    labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+                    datasets: [
+                        {
+                            label: "My First dataset",
+                            backgroundColor: "rgba(179,181,198,0.2)",
+                            borderColor: "rgba(179,181,198,1)",
+                            pointBackgroundColor: "rgba(179,181,198,1)",
+                            pointBorderColor: "#fff",
+                            pointHoverBackgroundColor: "#fff",
+                            pointHoverBorderColor: "rgba(179,181,198,1)",
+                            data: [65, 59, 90, 81, 56, 55, 40]
+                        },
+                        {
+                            label: "My Second dataset",
+                            backgroundColor: "rgba(255,99,132,0.2)",
+                            borderColor: "rgba(255,99,132,1)",
+                            pointBackgroundColor: "rgba(255,99,132,1)",
+                            pointBorderColor: "#fff",
+                            pointHoverBackgroundColor: "#fff",
+                            pointHoverBorderColor: "rgba(255,99,132,1)",
+                            data: [28, 48, 40, 19, 96, 27, 100]
+                        }
+                    ]
+                };
+
+
+
+                var ctx = document.getElementById("myChart");
+                var myChart = new Chart(ctx, {
+
+                    type: 'line',
+                     data: data,
+                    options: {
+                         scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero:true
+                                }
+                            }]
+                        }
+                    }
+                });
+
+
+                });
+
+    </script>
 
 
     

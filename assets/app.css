@@ -99,16 +99,12 @@ canvas{  -moz-user-select: none;  -webkit-user-select: none;   -ms-user-select: 
 
 
 /* APAGAR QUANDO IMPLEMENTAR */
-    .canvas-sample{background: #495465; width: 100%;}
+    .canvas-sample{ width: 100%; margin-bottom: -4px;}
 /* APAGAR QUANDO IMPLEMENTAR */
 
+ 
 
-
-/* TABS DASHBOARD */
-    .navtabs{}
-    .navtabs__list {     width: 100%; list-style: none; margin: 10px 0 0 0; padding: 0; display: inline-block;}
-    .navtabs__list-item {  position: relative; display: inline-block;}
-    .navtabs__list-item.active {  background-color: #1A2B39;}
+ 
 
 
 
@@ -123,7 +119,7 @@ canvas{  -moz-user-select: none;  -webkit-user-select: none;   -ms-user-select: 
 /* CARDS CANDIDATE */
     .card-candidate__container{ padding: 10px 0;}
     .card-candidate{ width: 120px; position: relative;}
-    .card-candidate__image { display: block; margin: 0 auto;}
+    .card-candidate__image {    margin: 0 auto; width: initial !important;}
     .card-candidate__name, .card-candidate__party { display: inline-block; width: 100%; text-align: center;}
     .card-candidate__name {color: #A2BACD;   font-weight: 700;  font-size: 12px;}
     .card-candidate__party{color: #A2BACD;    font-size: 12px;}
@@ -131,3 +127,24 @@ canvas{  -moz-user-select: none;  -webkit-user-select: none;   -ms-user-select: 
     .card-candidate__loading-container {  box-shadow: inset 1px 1px black; position: absolute; background: rgba(0, 0, 0, 0.33); width: 5px; height: 100%; right: 10px; bottom: 0; }
     .card-candidate__loading { background-color: red; width: 5px; position: absolute; bottom: 0px; right:0px; transition: all 0.5s;}
  
+
+
+
+/* CAROUSEL SYNC */
+
+#sync1 .item { color: #FFF;  }
+#sync2 .item {  padding: 10px 0px;   color: #FFF;   text-align: center;     cursor: -webkit-grab; }
+#sync2 .item:active { cursor: -webkit-grabbing;}
+ #sync2 .current .item {  background-color: #1A2B39;}
+.owl-theme .owl-nav {  /*default owl-theme theme reset .disabled:hover links */}
+.owl-theme .owl-nav [class*='owl-'] {  -webkit-transition: all .3s ease;  transition: all .3s ease;}
+.owl-theme .owl-nav [class*='owl-'].disabled:hover {  background-color: #D6D6D6;}
+#sync1.owl-theme {  position: relative;}
+#sync1.owl-theme .owl-next,
+#sync1.owl-theme .owl-prev {  width: 22px; height: 40px; margin-top: -20px; position: absolute; top: 50%;}
+#sync1.owl-theme .owl-prev {  left: 10px;}
+#sync1.owl-theme .owl-next { right: 10px;}
+
+/* END CAROUSEL SYNC */
+
+
