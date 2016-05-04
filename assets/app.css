@@ -20,6 +20,57 @@ canvas{  -moz-user-select: none;  -webkit-user-select: none;   -ms-user-select: 
 .z-5 { box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);   }
 
  
+
+
+
+
+
+
+/* COLORS CANDIDATE http://uigradients.com/ */
+    .party-color-1{ 
+        background: #EB3349; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #EB3349 , #F45C43); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #EB3349 , #F45C43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .party-color-2{ 
+        background: #FF8008; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #FF8008 , #FFC837); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #FF8008 , #FFC837); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .party-color-3{ 
+        background: #6a3093; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #6a3093 , #a044ff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #6a3093 , #a044ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+
+    .party-color-4{ 
+        background: #304352; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #304352 , #d7d2cc); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #304352 , #d7d2cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .party-color-5{
+        background: #AAFFA9; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #AAFFA9 , #11FFBD); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #AAFFA9 , #11FFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .party-color-6{
+        background: #02AAB0; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     }
+/* COLORS CANDIDATE */
+
+
+
+
+
+
+
+
+
 .navbar-static-top { margin-bottom: 19px;}
 .navbar { border-top: 2px solid #277c79; background-color: #2e3c4c;}
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover { color: #fff; background-color: #242f3b;}
@@ -37,68 +88,46 @@ canvas{  -moz-user-select: none;  -webkit-user-select: none;   -ms-user-select: 
 
 
 /* ICONS */
-.icon {
-    width: 23px;
-    height: 21px;
-    /* background-color: red; */
-    display: inline-block;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -9px;
-    margin-right: 5px;
-}
-.icon-dashboard{ background-image: url("images/icons/icon-statistic.png");}
-.icon-cabos-eleitorais{ background-image: url("images/icons/icon-cabos-eleitorais.png");}
-.icon-user{ background-image: url("images/icons/icon-user.png");}
+    .icon { width: 23px; height: 21px; display: inline-block; vertical-align: middle; background-repeat: no-repeat; background-size: cover; margin-top: -9px; margin-right: 5px; }
+    .icon-dashboard{ background-image: url("images/icons/icon-statistic.png");}
+    .icon-cabos-eleitorais{ background-image: url("images/icons/icon-cabos-eleitorais.png");}
+    .icon-user{ background-image: url("images/icons/icon-user.png");}
 
 
 
 
 
 
-
-.canvas-sample{background: #495465; width: 100%;}
+/* APAGAR QUANDO IMPLEMENTAR */
+    .canvas-sample{background: #495465; width: 100%;}
+/* APAGAR QUANDO IMPLEMENTAR */
 
 
 
 /* TABS DASHBOARD */
-.navtabs{}
-.navtabs__list {     width: 100%; list-style: none; margin: 10px 0 0 0; padding: 0; display: inline-block;}
-.navtabs__list-item {  position: relative; display: inline-block;}
-.navtabs__list-item.active {  background-color: #1A2B39;}
+    .navtabs{}
+    .navtabs__list {     width: 100%; list-style: none; margin: 10px 0 0 0; padding: 0; display: inline-block;}
+    .navtabs__list-item {  position: relative; display: inline-block;}
+    .navtabs__list-item.active {  background-color: #1A2B39;}
+
 
 
 /* CARDS */
-.card__slim{ padding: 0 !important;} 
-.card {  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37); background-color: #2e3c4c; color: #a3b2c5; margin-bottom: 20px; position: relative; z-index: 1; padding: 20px;}
- 
+    .card__slim{ padding: 0 !important;} 
+    .card__slim canvas { padding: 10px }
+    .card {  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37); background-color: #2e3c4c; color: #a3b2c5; margin-bottom: 20px; position: relative; z-index: 1; padding: 20px;}
+     
 
 
 
 /* CARDS CANDIDATE */
-.card-candidate__container{ padding: 10px 0;}
-.card-candidate{ width: 120px; position: relative;}
-.card-candidate__image { display: block; margin: 0 auto;}
-.card-candidate__name, .card-candidate__party { display: inline-block; width: 100%; text-align: center;}
-.card-candidate__name {color: #A2BACD;   font-weight: 700;  font-size: 12px;}
-.card-candidate__party{color: #A2BACD;    font-size: 12px;}
+    .card-candidate__container{ padding: 10px 0;}
+    .card-candidate{ width: 120px; position: relative;}
+    .card-candidate__image { display: block; margin: 0 auto;}
+    .card-candidate__name, .card-candidate__party { display: inline-block; width: 100%; text-align: center;}
+    .card-candidate__name {color: #A2BACD;   font-weight: 700;  font-size: 12px;}
+    .card-candidate__party{color: #A2BACD;    font-size: 12px;}
 
-.card-candidate__loading-container {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.22);
-    width: 5px;
-    height: 100%;
-    right: 10px;
-    bottom: 0;
-}
-.card-candidate__loading {
-    background-color: red;
-    width: 5px;
-    position: absolute;
-    bottom: 0px;
-    right:0px;
-    transition: all 0.5s;
-    
-}
+    .card-candidate__loading-container {  box-shadow: inset 1px 1px black; position: absolute; background: rgba(0, 0, 0, 0.33); width: 5px; height: 100%; right: 10px; bottom: 0; }
+    .card-candidate__loading { background-color: red; width: 5px; position: absolute; bottom: 0px; right:0px; transition: all 0.5s;}
  
