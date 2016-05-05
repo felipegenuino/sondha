@@ -164,6 +164,64 @@
                 });
 
 
+
+
+
+
+           var data10 = {
+                    labels: ["18-25", "25-35", "+35", ],
+                    datasets: [
+                        {
+                            label: "18-25",
+                            backgroundColor: "rgba(151,187,205,0.5)",
+                            borderColor: "rgba(225,215,14,0.3)",
+                            pointBackgroundColor: "rgba(179,181,198,1)",
+                            pointBorderColor: "#fff",
+                            pointHoverBackgroundColor: "#fff",
+                            pointHoverBorderColor: "rgba(179,181,198,1)",
+                            data: [65, 59, 90]
+                        },
+                        {
+                            label: "25-35",
+                            backgroundColor: "rgba(98,68,147,0.9)",
+                            borderColor: "rgba(64,44,94,0.4)",
+                            pointBackgroundColor: "rgba(255,99,132,1)",
+                            pointBorderColor: "#fff",
+                            pointHoverBackgroundColor: "#fff",
+                            pointHoverBorderColor: "rgba(255,99,132,1)",
+                            data: [ 96, 27, 100]
+                        },
+                        {
+                            label: "+35",
+                               backgroundColor: "#3d5ab4",
+                            borderColor: "rgba(179,181,198,1)",
+                            pointBackgroundColor: "rgba(179,181,198,1)",
+                            pointBorderColor: "#fff",
+                            pointHoverBackgroundColor: "#fff",
+                            pointHoverBorderColor: "rgba(179,181,198,1)",
+                            data: [65, 55, 40]
+                        }
+                    ]
+                };
+
+  
+
+
+               var ctx10 = document.getElementById("chartsample10");
+                var myChart = new Chart(ctx10, {
+
+
+                   type: 'doughnut',
+                     data: data10,
+                      options: {
+                            xAxes: [{
+                                display: false
+                            }]
+                        }
+                });
+
+
+
                 });
 
 
@@ -199,8 +257,8 @@ var dataDoughnut = {
 
 
 // And for a doughnut chart
-var ctx4 = document.getElementById("chartsample4");
-var myDoughnutChart = new Chart(ctx4, {
+var ctx0 = document.getElementById("chartsample4");
+var myDoughnutChart = new Chart(ctx0, {
     type: 'doughnut',
     data: dataDoughnut,
     options: {
@@ -211,3 +269,14 @@ var myDoughnutChart = new Chart(ctx4, {
         }
     }
 });
+
+
+
+
+
+
+
+ 
+
+
+
