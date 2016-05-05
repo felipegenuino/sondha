@@ -160,10 +160,10 @@
 		<section class="card card__slim">
 
           <div id="sync1" class="owl-carousel owl-theme">
-              <div class="item">  <canvas id="myChart" width="700" height="400"> </canvas> </div>
-              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-2" width="700" height="400"></canvas>  </div>
-              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-3" width="700" height="400"></canvas>  </div>
-              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-4" width="700" height="400"></canvas>  </div>
+              <div class="item">  <canvas id="chartsample1" width="700" height="400"> </canvas> </div>
+              <div class="item">  <canvas id="chartsample2" width="700" height="400"> </canvas>  </div>
+              <div class="item">  <canvas id="chartsample3" width="700" height="400"> </canvas> </div>
+              <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-5" width="700" height="400"></canvas> </div>
               <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-5" width="700" height="400"></canvas>  </div>
               <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-6" width="700" height="400"></canvas>  </div>
               <div class="item">  <canvas class="embed-responsive-item canvas-sample party-color-1" width="700" height="400"></canvas>  </div>
@@ -320,6 +320,7 @@
                         </ul> <!-- //component-x__header -->
 
                         <div class="component-x__body">
+                          <div class="circle circle-facebook" id="circles-1"></div>
                         </div> <!-- //component-x__body -->
                         <div class="component-x__footer">
                           <span class="component-x__footer_title"> 68%</span>
@@ -337,6 +338,7 @@
                         </ul> <!-- //component-x__header -->
 
                         <div class="component-x__body">
+                               <div class="circle circle-twitter" id="circles-2"></div>
                         </div> <!-- //component-x__body -->
                         <div class="component-x__footer">
                           <span class="component-x__footer_title"> 68%</span>
@@ -352,9 +354,8 @@
                           <li class="component-x__header-item"> #hashtag B </li>
                           <li class="component-x__header-item"> #hashtag C</li>
                         </ul> <!-- //component-x__header -->
-
                         <div class="component-x__body">
-
+                               <div class="circle circle-instagram" id="circles-3"></div>
                         </div> <!-- //component-x__body -->
                         <div class="component-x__footer">
                           <span class="component-x__footer_title"> 68%</span>
@@ -372,6 +373,7 @@
                         </ul> <!-- //component-x__header -->
 
                         <div class="component-x__body">
+                              <div class="circle circle-feed" id="circles-4"></div>
                         </div> <!-- //component-x__body -->
                        <div class="component-x__footer">
                           <span class="component-x__footer_title"> 68%</span>
@@ -398,65 +400,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
     <script src="assets/libs/bower_components/Chart.js/dist/Chart.min.js" ></script>
 
+    <script src="assets/libs/bower_components/circles-master/circles.min.js" ></script>
 
     <script src="assets/app.js"></script>
 
-    <script>
-      //conteudo provisório, retirar quando implementar
-          $(document).ready(function() {
-                Chart.defaults.global.responsive = true;
-                Chart.defaults.global.legend.labels.fontColor = "#A2BACD";
-                Chart.defaults.global.defaultFontColor = '#A2BACD';
+    <!-- TEMP -->
+    <script src="assets/temp-chartjs.js"></script>
+    <script src="assets/temp-circles.js"></script>
+    <!-- END TEMP -->
 
-                var data = {
-                    labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
-                    datasets: [
-                        {
-                            label: "My First dataset",
-                            backgroundColor: "rgba(179,181,198,0.2)",
-                            borderColor: "rgba(179,181,198,1)",
-                            pointBackgroundColor: "rgba(179,181,198,1)",
-                            pointBorderColor: "#fff",
-                            pointHoverBackgroundColor: "#fff",
-                            pointHoverBorderColor: "rgba(179,181,198,1)",
-                            data: [65, 59, 90, 81, 56, 55, 40]
-                        },
-                        {
-                            label: "My Second dataset",
-                            backgroundColor: "rgba(255,99,132,0.2)",
-                            borderColor: "rgba(255,99,132,1)",
-                            pointBackgroundColor: "rgba(255,99,132,1)",
-                            pointBorderColor: "#fff",
-                            pointHoverBackgroundColor: "#fff",
-                            pointHoverBorderColor: "rgba(255,99,132,1)",
-                            data: [28, 48, 40, 19, 96, 27, 100]
-                        }
-                    ]
-                };
-
-
-
-                var ctx = document.getElementById("myChart");
-                var myChart = new Chart(ctx, {
-
-                    type: 'line',
-                     data: data,
-                    options: {
-                         scales: {
-                            yAxes: [{
-                                ticks: {
-                                    beginAtZero:true
-                                }
-                            }]
-                        }
-                    }
-                });
-
-
-                });
-
-    </script>
-
+    
 
     
   </body>

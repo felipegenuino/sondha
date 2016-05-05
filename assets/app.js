@@ -1,13 +1,4 @@
-
-
-
-
-
-
-
-
 /* carousel with thumbs */
-
 
 $(document).ready(function() {
 
